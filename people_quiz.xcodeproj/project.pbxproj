@@ -13,6 +13,10 @@
 		6E90F1702880675E004E50DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E90F16E2880675E004E50DE /* Main.storyboard */; };
 		6E90F17228806761004E50DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E90F17128806761004E50DE /* Assets.xcassets */; };
 		6E90F17528806761004E50DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E90F17328806761004E50DE /* LaunchScreen.storyboard */; };
+		6EB4338E2881AB5800417450 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4338D2881AB5800417450 /* QuestionsViewController.swift */; };
+		6EB433902881B24A00417450 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB4338F2881B24A00417450 /* FinalViewController.swift */; };
+		6EB43392288214D900417450 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB43391288214D900417450 /* Questions.swift */; };
+		6EB43394288214EA00417450 /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB43393288214EA00417450 /* Answers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6E90F17128806761004E50DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E90F17428806761004E50DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E90F17628806761004E50DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB4338D2881AB5800417450 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		6EB4338F2881B24A00417450 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		6EB43391288214D900417450 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		6EB43393288214EA00417450 /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		6E90F1672880675E004E50DE /* people_quiz */ = {
 			isa = PBXGroup;
 			children = (
-				6E90F1682880675E004E50DE /* AppDelegate.swift */,
-				6E90F16A2880675E004E50DE /* SceneDelegate.swift */,
-				6E90F16C2880675E004E50DE /* ViewController.swift */,
-				6E90F16E2880675E004E50DE /* Main.storyboard */,
-				6E90F17128806761004E50DE /* Assets.xcassets */,
-				6E90F17328806761004E50DE /* LaunchScreen.storyboard */,
-				6E90F17628806761004E50DE /* Info.plist */,
+				6EB4338C2881912F00417450 /* Models */,
+				6EB4338B2881911A00417450 /* Resources */,
+				6EB4338A2881908900417450 /* View Controllers */,
+				6EB433892881905A00417450 /* Supporting Files */,
+				6E90F17C28807D93004E50DE /* Storyboards */,
 			);
 			path = people_quiz;
+			sourceTree = "<group>";
+		};
+		6E90F17C28807D93004E50DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6E90F16E2880675E004E50DE /* Main.storyboard */,
+				6E90F17328806761004E50DE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6EB433892881905A00417450 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E90F1682880675E004E50DE /* AppDelegate.swift */,
+				6E90F16A2880675E004E50DE /* SceneDelegate.swift */,
+				6E90F17628806761004E50DE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EB4338A2881908900417450 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E90F16C2880675E004E50DE /* ViewController.swift */,
+				6EB4338D2881AB5800417450 /* QuestionsViewController.swift */,
+				6EB4338F2881B24A00417450 /* FinalViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6EB4338B2881911A00417450 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E90F17128806761004E50DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EB4338C2881912F00417450 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EB43391288214D900417450 /* Questions.swift */,
+				6EB43393288214EA00417450 /* Answers.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB43394288214EA00417450 /* Answers.swift in Sources */,
+				6EB433902881B24A00417450 /* FinalViewController.swift in Sources */,
 				6E90F16D2880675E004E50DE /* ViewController.swift in Sources */,
 				6E90F1692880675E004E50DE /* AppDelegate.swift in Sources */,
+				6EB43392288214D900417450 /* Questions.swift in Sources */,
+				6EB4338E2881AB5800417450 /* QuestionsViewController.swift in Sources */,
 				6E90F16B2880675E004E50DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38NM7VX6QJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = people_quiz/Info.plist;
+				INFOPLIST_FILE = "people_quiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38NM7VX6QJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = people_quiz/Info.plist;
+				INFOPLIST_FILE = "people_quiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
